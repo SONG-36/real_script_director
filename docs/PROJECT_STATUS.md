@@ -2,7 +2,7 @@
 
 **Last updated**: 2026-07-17  
 **Project version**: 0.1.0  
-**Current phase**: SD-1｜第一批 Source Collection 规划
+**Current phase**: SD-1｜Batch 1A 官方政策 Source canonical 校准后待最终人工确认
 
 ## Completed
 
@@ -18,17 +18,19 @@
 - [x] `docs/03_KNOWLEDGE_BASE_INDEX.md` APPROVED_FOR_V0_1_VALIDATION
 - [x] Custom GPT Scope Audit completed in `docs/audits/01_CUSTOM_GPT_SCOPE_AUDIT.md`
 - [x] Custom GPT Scope Lock Cleanup completed; current Custom GPT scope remains locked to one determined concept -> formal TikTok Shop US shooting script
+- [x] Batch 1A official policy Sources `SRC-01` to `SRC-04` collected as `COLLECTED_PENDING_HUMAN_REVIEW`
+- [x] Batch 1A canonical Source correction completed for `SRC-01` to `SRC-04`
 
 ## Active
 
 - [ ] 审核当前仓库脚手架
-- [ ] 第一批 Source Collection 执行计划审核
+- [ ] 人工确认 `SRC-02` 是否可批准为 `APPROVED_SOURCE`
 
 ## Next
 
-1. 人工审核 `docs/exec-plans/active/04-first-source-collection-plan.md`
-2. 审核通过后按 Batch 1A 至 1D 开始实际 Source 收集
-3. Source 收集并人工审核后，单独创建 Source Digest 执行计划
+1. 人工确认 `SRC-02` canonical 页面标题、日期和适用范围
+2. 审核通过后，为 Batch 1A 创建 Source Digest 执行计划
+3. 另行确认是否继续执行 Batch 1B、1C、1D
 4. 待 v0.1 blocking knowledge 有可验证基础后，再推进 `docs/04_SCRIPT_OUTPUT_SCHEMA.md` 和 `docs/02_SYSTEM_INSTRUCTIONS.md`
 
 ## Explicitly deferred
@@ -54,4 +56,8 @@
 当前 Custom GPT 职责已完成 scope lock：
 一条已确定自有视频构想 -> 正式 TikTok Shop US 拍摄脚本。
 
-第一批 Source Collection 尚未开始；当前只完成执行计划创建。
+Batch 1A 官方政策 Source 已完成 canonical 校准：
+`SRC-01`、`SRC-03`、`SRC-04` 为 `APPROVED_SOURCE`；
+`SRC-02` 仍为 `COLLECTED_PENDING_HUMAN_REVIEW`。
+
+当前尚未创建 Source Digest，尚未修改 Knowledge 或 Skills。

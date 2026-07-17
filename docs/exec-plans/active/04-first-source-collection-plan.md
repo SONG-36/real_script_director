@@ -122,6 +122,32 @@ Later Source Digest work must be handled by a separate execution plan before mod
 
 - `source_digests/`
 
+Batch 1A execution files created on 2026-07-17:
+
+- `sources/policy_and_compliance/SRC-01_tiktok-shop-us-content-policy/metadata.yaml`
+- `sources/policy_and_compliance/SRC-01_tiktok-shop-us-content-policy/source_record.md`
+- `sources/policy_and_compliance/SRC-02_tiktok-shop-misleading-content/metadata.yaml`
+- `sources/policy_and_compliance/SRC-02_tiktok-shop-misleading-content/source_record.md`
+- `sources/policy_and_compliance/SRC-03_tiktok-shop-ai-content-restrictions/metadata.yaml`
+- `sources/policy_and_compliance/SRC-03_tiktok-shop-ai-content-restrictions/source_record.md`
+- `sources/policy_and_compliance/SRC-04_tiktok-shop-intellectual-property-policy/metadata.yaml`
+- `sources/policy_and_compliance/SRC-04_tiktok-shop-intellectual-property-policy/source_record.md`
+- `docs/source-collection/01_BATCH_1A_OFFICIAL_POLICY_COLLECTION_REPORT.md`
+
+Batch 1A canonical correction files updated on 2026-07-17:
+
+- `sources/policy_and_compliance/SRC-01_tiktok-shop-us-content-policy/metadata.yaml`
+- `sources/policy_and_compliance/SRC-01_tiktok-shop-us-content-policy/source_record.md`
+- `sources/policy_and_compliance/SRC-02_tiktok-shop-misleading-content/metadata.yaml`
+- `sources/policy_and_compliance/SRC-02_tiktok-shop-misleading-content/source_record.md`
+- `sources/policy_and_compliance/SRC-03_tiktok-shop-ai-content-restrictions/metadata.yaml`
+- `sources/policy_and_compliance/SRC-03_tiktok-shop-ai-content-restrictions/source_record.md`
+- `sources/policy_and_compliance/SRC-04_tiktok-shop-intellectual-property-policy/metadata.yaml`
+- `sources/policy_and_compliance/SRC-04_tiktok-shop-intellectual-property-policy/source_record.md`
+- `docs/source-collection/01_BATCH_1A_OFFICIAL_POLICY_COLLECTION_REPORT.md`
+- `docs/PROJECT_STATUS.md`
+- `CHANGELOG.md`
+
 ## 6. Work Steps
 
 ### Phase 1: Confirm Scope
@@ -463,6 +489,14 @@ Open questions for human confirmation before actual collection:
 - 2026-07-17: Created first Source Collection execution plan.
 - 2026-07-17: Updated `docs/PROJECT_STATUS.md` to mark current phase as first Source Collection planning.
 - 2026-07-17: Ran repository structure validation; validation passed.
+- 2026-07-17: Executed Batch 1A only: collected `SRC-01` through `SRC-04` official policy Sources under `sources/policy_and_compliance/`.
+- 2026-07-17: Created `docs/source-collection/01_BATCH_1A_OFFICIAL_POLICY_COLLECTION_REPORT.md`.
+- 2026-07-17: Updated `docs/PROJECT_STATUS.md` and `CHANGELOG.md` for Batch 1A pending human review.
+- 2026-07-17: Batch 1B, 1C, and 1D were not executed.
+- 2026-07-17: Executed Batch 1A Human Review and Canonical Source Correction for `SRC-01` through `SRC-04`.
+- 2026-07-17: Updated Source metadata and source records with `canonical_official_url`, `legacy_or_alternate_urls`, page title, page date, applicability notes, review status, and review notes.
+- 2026-07-17: Updated Batch 1A report with canonical URL review, legacy URL review, market applicability, final review status, corrections performed, and unresolved questions.
+- 2026-07-17: Confirmed no Source Digest, Knowledge, Skills, System Instructions, Output Schema, or Evaluation Rubric files were modified.
 
 ## 14. Decision Log
 
@@ -471,11 +505,33 @@ Open questions for human confirmation before actual collection:
 - 2026-07-17: Batch execution must stop for human review before Source Digest.
 - 2026-07-17: Internal Source intake must isolate supplier Claims from verified facts.
 - 2026-07-17: No Source may be written directly into Knowledge.
+- 2026-07-17: Initial Batch 1A collection used `COLLECTED_PENDING_HUMAN_REVIEW`; no Source was marked `APPROVED` before human review.
+- 2026-07-17: `SRC-02` is recorded as TikTok Shop global guidance, not US-exclusive policy.
+- 2026-07-17: TikTok platform AI-generated content support page is recorded only as a related reference under `SRC-03`, not as a separate TikTok Shop US policy Source.
+- 2026-07-17: Human review approved `SRC-01`, `SRC-03`, and `SRC-04` as `APPROVED_SOURCE`.
+- 2026-07-17: `SRC-02` remains `COLLECTED_PENDING_HUMAN_REVIEW` because canonical page title/date and market applicability need final human confirmation.
+- 2026-07-17: Legacy URLs for `SRC-02`, `SRC-03`, and `SRC-04` are retained as `LEGACY_OR_UNRESOLVED`; no legacy URL was deleted.
+- 2026-07-17: Batch 1B, 1C, and 1D remain unexecuted; this execution plan remains active.
 
 ## 15. Validation Performed
 
 - 2026-07-17: `python3 scripts/validate_structure.py` passed.
+- 2026-07-17: `python3 scripts/validate_structure.py` passed after Batch 1A Source collection.
+- 2026-07-17: `python3 scripts/validate_structure.py` passed after Batch 1A canonical Source correction.
 
 ## 16. Final Result
 
-Execution plan created and validated. Actual Source Collection has not started and requires human review before execution.
+Execution plan created and validated.
+
+Batch 1A has been executed for `SRC-01` through `SRC-04` only. The collected official policy Sources have received canonical Source correction. No Source Digest, Knowledge, Skill, System Instructions, Output Schema, or Evaluation Rubric files were modified.
+
+Batch 1B, 1C, and 1D remain unexecuted. This execution plan remains active.
+
+Canonical correction result:
+
+- `SRC-01`: `APPROVED_SOURCE`
+- `SRC-02`: `COLLECTED_PENDING_HUMAN_REVIEW`
+- `SRC-03`: `APPROVED_SOURCE`
+- `SRC-04`: `APPROVED_SOURCE`
+
+No Source Digest has been created.

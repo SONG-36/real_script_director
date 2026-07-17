@@ -1,0 +1,38 @@
+source_id: "SRC-01"
+source_name: "Content Policy"
+page_title: "Content Policy"
+official_url: "https://seller-us.tiktok.com/university/essay?knowledge_id=6837891779151617"
+canonical_official_url: "https://seller-us.tiktok.com/university/essay?knowledge_id=6837891779151617&lang=en"
+legacy_or_alternate_urls: []
+publisher: "TikTok Shop"
+source_type: "official | policy_and_compliance"
+captured_at: "2026-07-17"
+page_updated_at: "2026-07-01"
+market_scope: "TikTok Shop US"
+applicability_notes: "Official page shows Applies to: United States."
+category_scope: "general TikTok Shop content compliance"
+language: "English"
+credibility: "high"
+validity_status: "APPROVED_SOURCE"
+human_review_status: "APPROVED_SOURCE"
+reviewed_at: "2026-07-17"
+review_notes: "Human review confirmed knowledge_id=6837891779151617, title Content Policy, Applies to United States, and page date 2026-07-01. Canonical URL retained."
+applicable_topics:
+  - "KBI-11"
+intended_knowledge_files:
+  - "knowledge/06_COMPLIANCE_RULES.md"
+intended_skills:
+  - "tsd-input-fact-validation"
+  - "tsd-concept-strategy-design"
+  - "tsd-shooting-script-generation"
+  - "tsd-script-quality-review"
+key_sections:
+  - "Policy scope for TikTok Shop content"
+  - "Creator promotional content responsibility"
+  - "LIVEs, videos, images, titles, descriptions, spoken statements, on-screen text, voiceovers, product demonstrations, and visual representations"
+use_limitations:
+  - "Source stage only; do not convert directly into Knowledge without Source Digest."
+  - "Use for TikTok Shop US compliance boundary."
+  - "Does not prove any product capability."
+local_record_path: "sources/policy_and_compliance/SRC-01_tiktok-shop-us-content-policy/source_record.md"
+notes: "Canonical Source approved after human review."
