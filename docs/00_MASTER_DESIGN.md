@@ -449,6 +449,24 @@ CTA
 
 # 8. Script Input Pack
 
+```text
+RUNTIME_INPUT_SUPERSEDED
+```
+
+本节保留早期设计背景。
+
+TikTok Script Director v0.1 唯一批准的运行时输入，
+以 `docs/01_INPUT_CONTRACT.md` 为准。
+
+不得根据本节旧示例重新引入：
+
+- 商品基础信息扩展结构；
+- 已验证用户问题独立字段；
+- 已验证使用场景独立字段；
+- 核心卖点候选；
+- 辅助卖点候选；
+- 飞书原始行结构。
+
 Custom GPT 不应直接依赖整张飞书表格自行推测，而应接收一份结构化输入包。
 
 标准输入：

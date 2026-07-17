@@ -24,6 +24,8 @@
 
 ## Publishing results
 
+> Feedback-only field. Publishing results are for later attribution and improvement review. They are not a direct success criterion for current Script Director output quality, and they must not be used for market, creator, account, route, GMV, sales, or paid-traffic decisions inside the current Custom GPT.
+
 ## Review scores
 
 | Dimension | Score | Notes |

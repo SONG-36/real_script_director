@@ -919,6 +919,16 @@ evals/
 
 # 10. 反馈闭环
 
+```text
+FEEDBACK_LAYER_NOT_CURRENT_RUNTIME_SCOPE
+```
+
+本节描述长期反馈闭环，不是当前 Custom GPT 的运行职责。
+
+当前 Script Director 不读取发布数据，不做发布数据归因，不判断账号权重、价格、达人影响力、投流或商品路线。
+
+发布数据、商品点击、加购、成交和评论反馈只能作为后续人工归因与系统改进资料，不能作为当前单次脚本生成、READY / PROVISIONAL / BLOCKED 判定或脚本质量评分的直接依据。
+
 完整反馈路线：
 
 ```text

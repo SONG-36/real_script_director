@@ -13,7 +13,18 @@
 - Repository structure validator
 - v0.1 Script Input Pack frozen in `docs/01_INPUT_CONTRACT.md`
 - Manual flat Script Input Pack established as the official v0.1 input method
+- v0.1 Knowledge Base Index approved in `docs/03_KNOWLEDGE_BASE_INDEX.md`
+- Output Schema responsibility split frozen: `docs/04_SCRIPT_OUTPUT_SCHEMA.md` is the authoritative output contract; `knowledge/07_SCRIPT_OUTPUT_SCHEMA.md` is guidance knowledge
+- Custom GPT Scope Audit and Scope Lock Cleanup recorded in `docs/audits/01_CUSTOM_GPT_SCOPE_AUDIT.md`
 
 ### Deferred
 
 - Feishu original structure mapping and automatic Script Input Pack generation deferred to v0.2
+- First-batch Source Collection and Source Digest work deferred to the next execution plan
+
+### Changed
+
+- Marked the old Script Input Pack example in `docs/00_MASTER_DESIGN.md` as superseded by the approved v0.1 input contract.
+- Marked the feedback loop in `docs/06_KNOWLEDGE_SKILLS_ARCHITECTURE_AND_FEEDBACK_LOOP.md` as outside current Custom GPT runtime scope.
+- Marked `docs/08_FULL_CONTENT_DECISION_AND_SCRIPT_SYSTEM_ARCHITECTURE.md` as a full-system future reference, not current Custom GPT scope.
+- Clarified that `templates/EVAL_CASE_TEMPLATE.md` publishing results are feedback-only and not direct runtime success criteria.
