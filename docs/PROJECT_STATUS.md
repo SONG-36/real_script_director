@@ -11,20 +11,19 @@
 - [x] 知识库、Skills、评测与反馈架构
 - [x] Codex-first VS Code 项目脚手架
 - [x] 根级和目录级 Agent 指令
-- [x] Skills 骨架
+- [x] Skills 骨架（SCAFFOLD_ONLY）
 - [x] 评测和反馈目录骨架
+- [x] 电动泡沫喷壶完整输入示例
+- [x] `docs/01_INPUT_CONTRACT.md` APPROVED_FOR_V0_1_VALIDATION
 
 ## Active
 
 - [ ] 审核当前仓库脚手架
-- [ ] 冻结 `01_INPUT_CONTRACT.md`
 
 ## Next
 
-1. 建立 `01_INPUT_CONTRACT.md` 执行计划
-2. 映射飞书 01、02、03、04 表到 Script Input Pack
-3. 定义 READY / PROVISIONAL / BLOCKED 的必填条件
-4. 用车载吸尘器和泡沫喷壶各做一条输入示例
+1. 创建并完成 `docs/03_KNOWLEDGE_BASE_INDEX.md` 的执行计划
+2. 审核后再推进 `docs/02_SYSTEM_INSTRUCTIONS.md`
 
 ## Explicitly deferred
 

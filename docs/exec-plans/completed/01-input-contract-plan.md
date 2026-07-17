@@ -1,6 +1,6 @@
 # Execution Plan｜01_INPUT_CONTRACT.md
 
-**Status**: ACTIVE  
+**Status**: COMPLETED  
 **Owner**: Codex + project owner  
 **Started**: 2026-07-17  
 **Target**: Freeze `docs/01_INPUT_CONTRACT.md` as the v0.1 input contract for TikTok Script Director.
@@ -93,20 +93,20 @@ Do not modify:
 
 ## 6. Work steps
 
-- [ ] Confirm whether `docs/01_INPUT_CONTRACT.md` already exists and whether it has content to preserve.
-- [ ] Draft the document header with status, version, upstream documents, scope, and non-goals.
-- [ ] Define the Script Input Pack top-level structure.
-- [ ] Map Feishu tables `01_商品卡`, `02_输入证据库`, `03_竞品参考`, and `04_自有视频构想卡` into Script Input Pack sections.
-- [ ] Define required, optional, and conditionally required fields.
-- [ ] Define `READY`, `PROVISIONAL`, and `BLOCKED` status rules.
-- [ ] Add single-selling-point video input example.
-- [ ] Add multi-selling-point video input example.
-- [ ] Add insufficient-input and conflicting-input examples.
-- [ ] Add manual copy/paste formatting guidance.
-- [ ] Add validation checklist for future input packs.
-- [ ] Update required project tracking files if the final document is created.
-- [ ] Run `python3 scripts/validate_structure.py`.
-- [ ] Record validation result and final outcome in this plan.
+- [x] Confirm whether `docs/01_INPUT_CONTRACT.md` already exists and whether it has content to preserve.
+- [x] Draft the document header with status, version, upstream documents, scope, and non-goals.
+- [x] Define the Script Input Pack top-level structure.
+- [x] Map Feishu tables `01_商品卡`, `02_输入证据库`, `03_竞品参考`, and `04_自有视频构想卡` into Script Input Pack sections.
+- [x] Define required, optional, and conditionally required fields.
+- [x] Define `READY`, `PROVISIONAL`, and `BLOCKED` status rules.
+- [x] Add single-selling-point video input example.
+- [x] Add multi-selling-point video input example.
+- [x] Add insufficient-input and conflicting-input examples.
+- [x] Add manual copy/paste formatting guidance.
+- [x] Add validation checklist for future input packs.
+- [x] Update required project tracking files if the final document is created.
+- [x] Run `python3 scripts/validate_structure.py`.
+- [x] Record validation result and final outcome in this plan.
 
 ## 7. Feishu table to Script Input Pack mapping tasks
 
@@ -360,15 +360,48 @@ Manual validation checklist:
 
 - 2026-07-17: Execution plan created from required upstream documents.
 - 2026-07-17: Ran repository structure validation after plan creation; validation failed because required Skill skeleton files are missing.
+- 2026-07-17: Drafted `docs/01_INPUT_CONTRACT.md` as `DRAFT_FOR_VALIDATION`, covering Script Input Pack fields, Feishu mappings, fact isolation rules, selling point rules, status judgment, examples, and manual copy template.
+- 2026-07-17: Updated `docs/PROJECT_STATUS.md` and `docs/index.md` to reflect the new input contract validation draft.
+- 2026-07-17: Ran repository structure validation after drafting the input contract; validation still fails on missing Skill skeleton files, unrelated to the input contract draft.
+- 2026-07-17: Added the six missing `.agents/skills/*/SKILL.md` scaffold files required by `scripts/validate_structure.py`; these are structural skeletons only and do not implement business logic or knowledge.
+- 2026-07-17: Re-ran repository structure validation after the structural repair; validation passed.
+- 2026-07-17: Started real-business calibration pass. The requested real Feishu fields and real foam sprayer / vacuum cases were not provided in the prompt; they remain placeholders.
+- 2026-07-17: Revised `docs/01_INPUT_CONTRACT.md` to distinguish Feishu raw fields, aggregate fields, agent-derived fields, and suggested-new fields.
+- 2026-07-17: Removed the requirement for ordinary users to prefill derived strategy or status fields such as main proposition, core selling point, supporting selling point, content format, and READY / PROVISIONAL / BLOCKED.
+- 2026-07-17: Reframed existing examples as input-shape demonstrations, not real business cases.
+- 2026-07-17: Marked all six Skill skeletons as `SCAFFOLD_ONLY`.
+- 2026-07-17: Updated `templates/SCRIPT_INPUT_PACK.yaml` to match the human minimum input template.
+- 2026-07-17: Stopped Feishu database field-level calibration per project owner direction; v0.1 now uses a manually prepared flat Script Input Pack.
+- 2026-07-17: Rewrote `docs/01_INPUT_CONTRACT.md` to define only the fixed v0.1 input fields: `视频构想`, `已验证商品事实`, `待验证内容`, `风险限制`, and `参考视频`.
+- 2026-07-17: Removed or downgraded `raw_feishu_rows`, `product_card_01`, `concept_card_04`, `evidence_rows_02`, `competitor_rows_03`, Feishu field type calibration, and Feishu association expansion rules.
+- 2026-07-17: Updated `templates/SCRIPT_INPUT_PACK.yaml` to the final flat v0.1 structure.
+- 2026-07-17: Updated project status and documentation index to remove the field-calibration waiting state.
+- 2026-07-17: Added the project owner-provided electric foam sprayer YAML as the complete input example in `docs/01_INPUT_CONTRACT.md`.
+- 2026-07-17: Checked consistency across fixed input structure, required fields, optional fields, empty-list rules, agent-derived fields, and READY / PROVISIONAL / BLOCKED input judgment.
+- 2026-07-17: Project owner confirmed final facts: v0.1 fixed input structure is frozen, foam sprayer example is included, rules are consistent, Feishu field-level mapping is deferred to v0.2, and structure validation passes.
+- 2026-07-17: Updated `docs/01_INPUT_CONTRACT.md` status to `APPROVED_FOR_V0_1_VALIDATION`.
+- 2026-07-17: Updated `docs/PROJECT_STATUS.md`, `docs/index.md`, and `CHANGELOG.md` for final approval.
 
 ## 17. Decision log
 
 - 2026-07-17: Keep examples inside `docs/01_INPUT_CONTRACT.md` for the first contract draft so reviewers can validate field rules and example usage in one place.
 - 2026-07-17: Treat exact Feishu field names as an open confirmation item unless current exported field definitions are provided.
+- 2026-07-17: Marked example cases as input-shape examples and `PROVISIONAL` or `BLOCKED` rather than inventing `READY` business facts not present in current upstream documents.
+- 2026-07-17: No conflict requiring changes to `00_MASTER_DESIGN.md` was found; unresolved field-name exactness remains an owner confirmation item.
+- 2026-07-17: Fixed missing Skill scaffold files because AGENTS.md requires structural validation failures to be repaired before declaring the task complete.
+- 2026-07-17: Real field calibration is blocked until actual field names and field types are provided for all four Feishu tables.
+- 2026-07-17: Real business examples are blocked until actual 04 concepts, 02 evidence records, and 03 competitor reference records are provided for foam sprayer and car vacuum.
+- 2026-07-17: READY / PROVISIONAL / BLOCKED must be judged only against the current concept's required capability and proof path; unrelated pending tests for the same product must not block the current concept.
+- 2026-07-17: Feishu original schema mapping is explicitly deferred to v0.2 automation and is no longer part of v0.1 Input Contract.
+- 2026-07-17: The requested foam sprayer complete YAML was not present in the prompt; `docs/01_INPUT_CONTRACT.md` records the example slot as pending rather than fabricating one.
+- 2026-07-17: The foam sprayer YAML was provided and inserted without changing the frozen input structure.
+- 2026-07-17: Final approval decision: `docs/01_INPUT_CONTRACT.md` is approved for v0.1 validation.
+- 2026-07-17: No remaining blockers for `docs/01_INPUT_CONTRACT.md`.
+- 2026-07-17: Deferred item for v0.2: Feishu original field mapping, association expansion, and automatic flat Script Input Pack generation.
 
 ## 18. Validation performed
 
-Ran:
+Ran before drafting the input contract:
 
 ```bash
 python3 scripts/validate_structure.py
@@ -389,8 +422,106 @@ Failures:
 - missing skill: `.agents/skills/repo-source-digest/SKILL.md`
 - missing skill: `.agents/skills/repo-exec-plan-maintenance/SKILL.md`
 
-The final input contract still needs validation after `docs/01_INPUT_CONTRACT.md` is drafted.
+Ran again after drafting `docs/01_INPUT_CONTRACT.md` and updating project records:
+
+```bash
+python3 scripts/validate_structure.py
+```
+
+Result:
+
+```text
+Validation failed with 6 issue(s).
+```
+
+Failures:
+
+- missing skill: `.agents/skills/tsd-input-fact-validation/SKILL.md`
+- missing skill: `.agents/skills/tsd-concept-strategy-design/SKILL.md`
+- missing skill: `.agents/skills/tsd-shooting-script-generation/SKILL.md`
+- missing skill: `.agents/skills/tsd-script-quality-review/SKILL.md`
+- missing skill: `.agents/skills/repo-source-digest/SKILL.md`
+- missing skill: `.agents/skills/repo-exec-plan-maintenance/SKILL.md`
+
+Structural repair performed:
+
+- added `.agents/skills/tsd-input-fact-validation/SKILL.md`
+- added `.agents/skills/tsd-concept-strategy-design/SKILL.md`
+- added `.agents/skills/tsd-shooting-script-generation/SKILL.md`
+- added `.agents/skills/tsd-script-quality-review/SKILL.md`
+- added `.agents/skills/repo-source-digest/SKILL.md`
+- added `.agents/skills/repo-exec-plan-maintenance/SKILL.md`
+
+Ran again after structural repair:
+
+```bash
+python3 scripts/validate_structure.py
+```
+
+Result:
+
+```text
+Repository structure validation passed.
+Root: /Users/andy/Coding/real_director
+Skills checked: 6
+```
+
+Ran after the real-business calibration pass:
+
+```bash
+python3 scripts/validate_structure.py
+```
+
+Result:
+
+```text
+Repository structure validation passed.
+Root: /Users/andy/Coding/real_director
+Skills checked: 6
+```
+
+Run after simplifying the v0.1 flat input contract:
+
+```bash
+python3 scripts/validate_structure.py
+```
+
+Result:
+
+```text
+Repository structure validation passed.
+Root: /Users/andy/Coding/real_director
+Skills checked: 6
+```
+
+Run after adding the electric foam sprayer complete example:
+
+```bash
+python3 scripts/validate_structure.py
+```
+
+Result:
+
+```text
+Repository structure validation passed.
+Root: /Users/andy/Coding/real_director
+Skills checked: 6
+```
+
+Run during final status closeout:
+
+```bash
+python3 scripts/validate_structure.py
+```
+
+Result:
+
+```text
+Repository structure validation passed.
+Root: /Users/andy/Coding/real_director
+Skills checked: 6
+```
 
 ## 19. Final result
 
-Pending.
+`docs/01_INPUT_CONTRACT.md` is approved as `APPROVED_FOR_V0_1_VALIDATION`. The v0.1 fixed manual flat Script Input Pack is frozen, the electric foam sprayer complete YAML example is included, and `templates/SCRIPT_INPUT_PACK.yaml` matches the approved structure. Feishu original field mapping, association expansion, and automatic Script Input Pack generation are deferred to v0.2. There are no remaining blockers. Repository structure validation passes. This execution plan is complete and should be archived under `docs/exec-plans/completed/`.

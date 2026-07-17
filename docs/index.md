@@ -12,7 +12,7 @@
 | 文件 | 状态 | 用途 |
 |---|---|---|
 | `00_MASTER_DESIGN.md` | APPROVED_FOR_V0_1_VALIDATION | 冻结系统目标和边界 |
-| `01_INPUT_CONTRACT.md` | NOT_STARTED | 冻结输入字段、缺失规则和映射 |
+| `01_INPUT_CONTRACT.md` | APPROVED_FOR_V0_1_VALIDATION | 冻结 v0.1 人工扁平 Script Input Pack |
 | `02_SYSTEM_INSTRUCTIONS.md` | NOT_STARTED | Custom GPT 系统指令 |
 | `03_KNOWLEDGE_BASE_INDEX.md` | NOT_STARTED | Source、Digest、Knowledge 索引 |
 | `04_SCRIPT_OUTPUT_SCHEMA.md` | NOT_STARTED | 固定脚本输出 |

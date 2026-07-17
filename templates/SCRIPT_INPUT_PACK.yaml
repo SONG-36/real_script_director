@@ -1,33 +1,19 @@
-task:
-  concept_id: ""
-  concept_name: ""
-  product: ""
-  video_goal: "conversion"
-  target_market: "TikTok Shop US"
-  target_duration_seconds: null
+视频构想:
+  视频主题: ""
+  商品: ""
+  视频目标: "转化"
+  市场: "TikTok Shop US"
+  用户痛点: ""
+  产品怎么解决: ""
+  画面怎么证明: ""
+  拍摄条件: ""
+  目前缺什么: ""
 
-conversational_concept:
-  user_problem: ""
-  product_solution: ""
-  visual_proof: ""
-  shooting_conditions: ""
-  current_gaps: ""
+已验证商品事实:
+  - ""
 
-product_basics:
-  purpose: ""
-  accessories: []
+待验证内容: []
 
-verified_facts: []
-verified_user_problems: []
-verified_scenarios: []
-core_selling_point_candidates: []
-supporting_selling_point_candidates: []
-usable_visual_proofs: []
-pending_validation: []
-risks_and_limits: []
+风险限制: []
 
-competitor_references:
-  - video_name: ""
-    video_type: "real | ai | mixed | unknown"
-    reference_roles: []
-    conclusion: ""
+参考视频: []
