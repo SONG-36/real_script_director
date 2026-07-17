@@ -1,0 +1,33 @@
+task:
+  concept_id: ""
+  concept_name: ""
+  product: ""
+  video_goal: "conversion"
+  target_market: "TikTok Shop US"
+  target_duration_seconds: null
+
+conversational_concept:
+  user_problem: ""
+  product_solution: ""
+  visual_proof: ""
+  shooting_conditions: ""
+  current_gaps: ""
+
+product_basics:
+  purpose: ""
+  accessories: []
+
+verified_facts: []
+verified_user_problems: []
+verified_scenarios: []
+core_selling_point_candidates: []
+supporting_selling_point_candidates: []
+usable_visual_proofs: []
+pending_validation: []
+risks_and_limits: []
+
+competitor_references:
+  - video_name: ""
+    video_type: "real | ai | mixed | unknown"
+    reference_roles: []
+    conclusion: ""
